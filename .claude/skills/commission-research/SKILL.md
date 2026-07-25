@@ -1,6 +1,6 @@
 ---
 name: commission-research
-description: Scaffold and run a prior-art/competitive research pass for a design doc or RFC in this repo — writes a brief, a findings submission structure, and a handoff prompt for other tools, then runs an independent findings pass and later a synthesis pass. Use when the user says "commission research on X", "start a research pass for RFC-Y", "scaffold research for the design doc", "run a prior-art scan", or asks to set up research following the docs/research process.
+description: Scaffold and run a prior-art/competitive research pass for a design doc or RFC in this repo — writes a brief, a findings submission structure, and a handoff prompt for other tools, then runs an independent findings pass and, once other sources' findings are in, a synthesis pass. Use whenever the user asks to commission, scaffold, or kick off research on a design doc/RFC/PR in this repo, wants a prior-art or competitive scan, or wants findings from multiple sources synthesized or combined — including later re-entry phrases like "synthesize the findings for X" or "combine what we got back", even without the words "research pass".
 ---
 
 # Commission research
@@ -48,6 +48,9 @@ If any of these is missing or ambiguous, ask before scaffolding anything.
 4. **Write the handoff prompt** at `docs/research/<topic-slug>/handoff-prompt.md`
    — the brief and output format bundled into one copy-pasteable,
    self-contained prompt for a tool or person with no repo access.
+   Also add or update the top-level `docs/research/README.md` with a link
+   to this topic's `README.md`, so multiple topics stay discoverable from
+   one place instead of only being findable by browsing directories.
 5. **Run your own findings pass.** Research the brief yourself and write
    `docs/research/<topic-slug>/findings/claude-findings.md`, following the
    template exactly — don't special-case your own output or leave rationale
