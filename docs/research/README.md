@@ -21,3 +21,13 @@ Each researcher works from the brief independently, without seeing the
 other's output first. That's deliberate — it avoids one tool anchoring on
 the other's framing, and it means the synthesis step can show genuine
 agreement/disagreement instead of one tool just echoing the other.
+
+## Starting a new research pass
+
+This folder is laid out flat because it was the first research pass in the
+repo. Later topics should live under their own `docs/research/<topic-slug>/`
+subfolder instead, so multiple concurrent passes don't collide in one
+shared `findings/` directory. See
+[`commissioning-prompt-template.md`](commissioning-prompt-template.md) for a
+fill-in-the-blanks prompt that runs this whole process end to end, or run
+`/commission-research <design-doc> <topic-slug> [branch]`.
