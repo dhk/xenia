@@ -10,10 +10,10 @@ person. Examples: `claude-findings.md`, `chatgpt-findings.md`,
 
 ## Format
 
-Copy [`TEMPLATE.md`](TEMPLATE.md) and fill it in. Keep the six section
-headers and the table columns exactly as given, in the same order as the
-brief's six research questions — that's what lets the synthesis step diff
-findings across sources mechanically instead of re-reading free-form prose.
+Copy [`TEMPLATE.md`](TEMPLATE.md) and fill it in. Keep the section headers
+and the table columns exactly as given, in the same order as the brief's
+research questions — that's what lets the synthesis step diff findings
+across sources mechanically instead of re-reading free-form prose.
 Within a table cell, write as much as you need; just don't rename, reorder,
 or drop columns/sections.
 

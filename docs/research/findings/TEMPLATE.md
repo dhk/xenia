@@ -6,7 +6,7 @@ brief: docs/research/credential-provisioning-research-brief.md
 
 # Findings: credential provisioning prior-art scan — <source>
 
-Keep the six section headers below in this order, and keep each table's
+Keep the section headers below in this order, and keep each table's
 columns as given. Add rows freely; don't rename or drop columns. See
 `../findings/README.md` for the submission format.
 
