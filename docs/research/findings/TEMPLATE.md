@@ -10,6 +10,15 @@ Keep the six section headers below in this order, and keep each table's
 columns as given. Add rows freely; don't rename or drop columns. See
 `../findings/README.md` for the submission format.
 
+Two rules that keep findings mechanically diffable across sources:
+
+- **Verdict values are a closed set**: use exactly one of `adopt/reference`,
+  `differentiate`, or `ignore` per row — don't invent new labels.
+- **If a question turns up no prior art, say so explicitly** — add a single
+  row with `none found` in the Entry column and explain why in Notes.
+  Don't leave a table empty; an empty table reads as "didn't look," not
+  "looked, found nothing."
+
 ## 1. Provider abstraction / non-goals boundary
 
 | Entry | What it is | RFC-0001 concept overlap | Verdict (adopt/reference / differentiate / ignore) |

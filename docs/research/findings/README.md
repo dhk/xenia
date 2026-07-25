@@ -17,6 +17,15 @@ findings across sources mechanically instead of re-reading free-form prose.
 Within a table cell, write as much as you need; just don't rename, reorder,
 or drop columns/sections.
 
+Two rules that keep this mechanically diffable — see `TEMPLATE.md` for
+where they apply:
+
+- Verdict is a closed set: `adopt/reference`, `differentiate`, or `ignore`.
+  Don't invent new labels.
+- No empty tables. If a question turns up nothing, add a `none found` row
+  and explain why in Notes, so it reads as "looked, found nothing" rather
+  than "skipped."
+
 Fill in the frontmatter at the top (source name, date, and the brief file
 you worked from) so the synthesis step can cite where each finding came
 from.
