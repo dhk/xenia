@@ -72,6 +72,16 @@ rename, reorder, or drop them; this lets independent findings get diffed
 mechanically against another tool's output later. Work independently —
 don't look up or reconcile against any other tool's findings.
 
+Two rules that keep this mechanically diffable:
+
+- **Verdict is a closed set**: use exactly one of `adopt/reference`,
+  `differentiate`, or `ignore` per row — don't invent new labels, and don't
+  append rationale after the verdict (put rationale in that section's Notes
+  instead).
+- **No empty tables.** If a question turns up no prior art, add a single row
+  with `none found` in the Entry column and explain why in Notes, rather
+  than leaving the table empty.
+
 **Return the completed markdown as your output.** It will be saved as
 `docs/research/findings/<your-name>-findings.md` in the repo.
 
