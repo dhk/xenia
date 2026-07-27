@@ -10,7 +10,10 @@ before it moves out of Draft. Read these in order:
 2. [`findings/`](findings/) — one file per independent researcher, each
    answering the brief's six questions in the same structure. See
    [`findings/README.md`](findings/README.md) for the submission format.
-3. `credential-provisioning-synthesis.md` (added once findings are in) — the
+3. [`handoff-prompt.md`](handoff-prompt.md) — the brief and submission
+   format bundled into one self-contained prompt, for handing to a tool or
+   person who won't otherwise read this folder.
+4. `credential-provisioning-synthesis.md` (added once findings are in) — the
    reconciled result: where findings agree, where they conflict, what's
    still open. This is the artifact that actually gets linked back into
    RFC-0001 review — the raw findings are inputs, not the deliverable.
