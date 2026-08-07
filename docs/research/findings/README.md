@@ -1,5 +1,7 @@
 # Submitting findings
 
+> Findings may be human- or model-generated research inputs. They are non-authoritative until relevant claims are checked against primary sources, and they do not change an RFC's status.
+
 Each independent researcher (human or tool) produces one file here.
 
 ## Filename

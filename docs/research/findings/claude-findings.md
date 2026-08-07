@@ -6,6 +6,8 @@ brief: docs/research/credential-provisioning-research-brief.md
 
 # Findings: credential provisioning prior-art scan — Claude (claude-sonnet-5)
 
+> **Non-authoritative model-generated research input.** Product, pricing, program, and evolving-standards claims may be stale or incomplete. This file preserves the original independent finding and disagreement; see the [evidence register](../evidence-register.md) before relying on a claim.
+
 ## 1. Provider abstraction / non-goals boundary
 
 | Entry | What it is | RFC-0001 concept overlap | Verdict (adopt/reference / differentiate / ignore) |

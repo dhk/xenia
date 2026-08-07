@@ -1,5 +1,7 @@
 # Research: credential provisioning prior-art scan
 
+> **Non-authoritative research inputs:** Findings authored by Claude and Perplexity are model-generated leads and interpretations, not project claims or specification decisions. Consult the [evidence register](evidence-register.md) for primary-source verification and the [recommendation register](../specification-status.md) for decision status.
+
 This folder holds the research pass that feeds back into RFC-0001 (PR #2)
 before it moves out of Draft. Read these in order:
 
@@ -17,6 +19,7 @@ before it moves out of Draft. Read these in order:
    — the reconciled result: where findings agree, where they conflict,
    what's still open. This is the artifact that actually gets linked back
    into RFC-0001 review — the raw findings are inputs, not the deliverable.
+5. [`evidence-register.md`](evidence-register.md) — primary sources checked during publication, verification dates, and explicit gaps.
 
 ## Why findings stay separate before synthesis
 

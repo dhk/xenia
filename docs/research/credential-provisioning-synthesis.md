@@ -1,5 +1,7 @@
 # Synthesis: credential provisioning prior-art scan
 
+> **Non-authoritative synthesis of model-generated research inputs.** This document preserves agreement, disagreement, and leads. It is not a specification decision. See the [recommendation register](../specification-status.md) for accepted/pending/needs-verification status and the [evidence register](evidence-register.md) for primary-source checks.
+
 Status: reconciles two independent findings passes into recommendations for
 RFC-0001 review.
 
@@ -41,9 +43,10 @@ Extensibility as compatible/watchable future credential kinds.
 
 **Agreement**: Full agreement, no divergence. Both sources landed on
 Vault/Secrets Manager/Doppler/Infisical as adopt/reference, and both
-independently concluded the same thing: no existing secret manager models
-the trial/BYOK/managed three-way mode taxonomy — that's RFC-0001's genuine
-contribution in this area, not something to borrow.
+independently reported that the secret managers they surveyed did not model
+the trial/BYOK/managed three-way mode taxonomy. That bounded finding suggests
+a possible contribution for RFC-0001; it does not establish an exhaustive
+absence across all secret managers.
 
 **Recommendation for RFC-0001**: add a short explicit statement (likely in
 BYOK controls or Security model) that Xenia is a resolution/brokering layer
@@ -179,10 +182,11 @@ design decisions, not more searching:
 - **Trial-abuse specifics at OpenAI/Anthropic/Replicate** — both sources
   hit the same wall (no public documentation); general industry pattern
   (Stripe, Mistral, OpenRouter) is the best available public proxy.
-- **No vendor-neutral foundation exists yet specifically for AI
-  credential/secrets provisioning** (my finding) — CNCF's and OpenID's
+- **No vendor-neutral foundation was identified in the surveyed sources
+  specifically for AI credential/secrets provisioning** (one researcher's
+  finding) — CNCF's and OpenID's
   precedents are adjacent, not identical, domains. Perplexity's framing of
-  this same point: no existing spec combines OpenAPI-style static
+  this same point: the surveyed sources did not identify a spec combining OpenAPI-style static
   declaration, MCP-style dynamic discovery, and a trial/BYOK/managed
   three-way resolution model in one place — RFC-0001's actual white space.
 - **Nango, Paragon, and Merge.dev** were not independently verified in
@@ -191,13 +195,13 @@ design decisions, not more searching:
 
 ## Top-line recommendation
 
-Nothing found across either pass suggests RFC-0001 is redundant with
-existing work — both sources independently concluded its combination of
-(a) an open, portable manifest format, (b) explicit trial/BYOK/managed mode
-semantics, and (c) normative trial-abuse-control language is real white
-space relative to OAuth/OIDC, secret managers, MCP's auth spec, and
-commercial platforms like Composio/Arcade/Nango. The highest-value fix
-before RFC-0001 leaves Draft is procedural, not conceptual: adopt FIDO's
-cross-vendor interoperability-testing requirement into the Conformance
-section, since self-certification alone (the RFC's current plan) is the
-one place precedent suggests real credibility risk.
+Within the bounded sources and search methods used by these two passes, the
+researchers did not identify an equivalent specification combining the
+three features they examined: a portable declaration, explicit
+trial/BYOK/managed mode semantics, and normative trial controls. This is a
+provisional novelty hypothesis, not proof that no equivalent work exists.
+
+The synthesis recommends evaluating cross-vendor interoperability testing
+before RFC-0001 leaves Draft, drawing on FIDO as an adjacent precedent.
+That recommendation remains **Pending**; applicability, governance, and the
+existence of any future conformance program require separate decisions.

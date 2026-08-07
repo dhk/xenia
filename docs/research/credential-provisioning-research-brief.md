@@ -2,7 +2,7 @@
 
 Status: **research only** — no implementation planned yet.
 
-Source doc: [RFC-0001, "Xenia Credential Provisioning Contract"](https://github.com/dhk/xenia/blob/feature/bootstrap-repo/docs/rfcs/0001-credential-provisioning-contract.md)
+Source doc: [RFC-0001, "Xenia Credential Provisioning Contract"](../rfcs/0001-credential-provisioning-contract.md) (the research round used the draft from `feature/bootstrap-repo`; the same draft is now published on the default branch with provenance preserved)
 Tracking PR: #2 (draft)
 
 ## Why this brief exists
